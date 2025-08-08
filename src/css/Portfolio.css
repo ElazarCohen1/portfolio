@@ -1,0 +1,48 @@
+
+#portfolio{
+    width: 100%;
+    background-color: rgb(23, 22, 22);
+    margin: 10px;
+    
+}
+#portfolio p{
+    color: aliceblue;
+}
+
+#projects{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+#grid_project{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    grid-auto-rows: minmax(400px, 1fr);
+    
+}
+
+#title_portfolio{
+    color: azure;
+}
+
+
+/* the project card */
+
+#block_in_project{
+    width: 250px;
+    height: fit-content;
+    border: 1px solid rgb(58, 51, 51);
+    /* background-color: aliceblue; */
+}
+
+
+#image_presentation{
+    width: 200px;
+    padding: 10%;
+}
+
+#project_description{
+    font-size: 12px;
+}
