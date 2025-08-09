@@ -1,4 +1,4 @@
-.home {
+.home_page {
   display: flex;
   height: 100vh;
   width: 100%;
@@ -91,7 +91,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .home {
+  .home_page {
     flex-direction: column;
   }
   #profil, .my_portfolio {

@@ -4,7 +4,7 @@ import '../css/Home.css'
 
 function Home(){
     return <>
-    <div className="home">
+    <div className="home_page">
         <div id="profil">
           <img src={profil} alt="profil"  />
         </div>
