@@ -13,7 +13,7 @@ function Home(){
           <h1 className='title_text'>
             my portfolio
           </h1>
-          <a href="CV_Elazar_cohen.pdf" download>
+          <a href="/CV_Elazar_cohen.pdf" download>
             <button>download my resume</button>
           </a>
         </div>
