@@ -15,7 +15,7 @@ function NavbarMenu() {
         zIndex: 1000
       }}>
       <Container>
-        <Navbar.Brand href="/#home" className="d-flex align-items-center gap-2">
+        <Navbar.Brand href="#home" className="d-flex align-items-center gap-2">
         <img
             src={logo}
             alt="Logo"
@@ -28,7 +28,7 @@ function NavbarMenu() {
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
           <Nav className="me-auto">
-            <Nav.Link href="/#home">Accueil</Nav.Link>
+            <Nav.Link href="#home">Accueil</Nav.Link>
             <Nav.Link href="#about">À propos</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
