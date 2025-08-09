@@ -3,6 +3,8 @@ import Skill from '../widget/skill.jsx'
 import python_logo from '../assets/langage/python.png'
 import java_logo from '../assets/langage/java.png'
 import php_logo from '../assets/langage/php.png'
+import c_logo from '../assets/langage/C.png'
+
 import html_logo from '../assets/langage/html.png'
 import css_logo from '../assets/langage/css.png'
 import flutter_logo from '../assets/langage/flutter.png'
@@ -19,6 +21,7 @@ const SkillsMenu = () => {
     { name: 'Python', imageUrl: python_logo},
     { name: 'Java', imageUrl:  java_logo},
     { name: 'PHP', imageUrl:  php_logo},
+    { name: 'C', imageUrl: c_logo },
   ];
 
   const skillsWeb = [

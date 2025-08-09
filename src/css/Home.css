@@ -1,43 +1,121 @@
+.home {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: white;
+  overflow: hidden;
+}
+
 #profil {
   flex: 5;
-  opacity: 0.6;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-#profil img{
-    width: 100%;
-    height: 100%;
+#profil img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: transform 0.8s ease, filter 0.8s ease;
+  will-change: transform, filter;
+}
+
+#profil img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
 }
 
 .my_portfolio {
   flex: 5;
-  border: 1px solid rgb(16, 16, 16);
-  /* background-color: rgb(16, 16, 16); */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 40px; */
-  width: 100%;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+  text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
-.title_text{
-  background-image: url('../assets/logo.png');
-  opacity: 0.7;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  column-count: 2 ;
-  width: 50%;
-  height: 60%;
-  color: #7e7c7c;
-  font-size: 100px;
-  text-align: left;
+/* Agrandissement et style amélioré du logo en arrière-plan */
+.title_text {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #e0e0e0;
+  margin-bottom: 3rem;
+  z-index: 20;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home {
-  display: flex;
-  height: 100%;
-  width: 100%;
+/* Logo en fond derrière le texte */
+.title_text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: -1;
+}
+
+/* Bouton stylé avec effet glow */
+.my_portfolio a button {
+  background: #ff9800;
+  margin-top: 90px;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 152, 0, 0.4);
+}
+
+.my_portfolio a button:hover {
+  background: #e68900;
+  transform: scale(1.07);
+  box-shadow: 0 0 12px 3px #ffae42;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  #profil, .my_portfolio {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .title_text {
+    font-size: 3rem;
+  }
+
+  .my_portfolio a button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_text {
+    font-size: 2.4rem;
+  }
+
+  .my_portfolio a button {
+    padding: 10px 20px;
+  }
 }
