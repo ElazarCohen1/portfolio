@@ -27,17 +27,17 @@ function Contact() {
             <h1 id="title_contact">Contact</h1>
 
             <p id="text_contact">
-                N’hésitez pas à m’envoyer un message, je vous répondrai rapidement.
+                Don't hesitate to send me a message, I will respond quickly.
             </p>
 
             <form id="formulaire_contact" onSubmit={sendEmail}>
                 <div className="form_group">
-                    <label htmlFor="name">Nom</label>
+                    <label htmlFor="name">Name</label>
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="Votre nom"
+                        placeholder="Your name"
                         required
                     />
                 </div>
@@ -48,7 +48,7 @@ function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Votre email"
+                        placeholder="Your email"
                         required
                     />
                 </div>
@@ -58,14 +58,14 @@ function Contact() {
                     <textarea
                         id="message"
                         name="message"
-                        placeholder="Votre message..."
+                        placeholder="Your message..."
                         rows="5"
                         required
                     ></textarea>
                 </div>
 
                 <button type="submit" id="submit_btn">
-                    Envoyer
+                    Submit
                 </button>
             </form>
         </div>

@@ -4,12 +4,17 @@
     margin: 1rem 0;
     padding: 2rem 1rem;
     box-sizing: border-box;
+    animation: popUp 1s ease-out forwards;
+
 }
 
 #portfolio p {
     color: #f0f0f0;
     line-height: 1.4;
+    animation: popUp 1s ease-out forwards;
+
 }
+
 
 #projects {
     width: 100%;
@@ -31,8 +36,10 @@
 #title_portfolio {
     color: #dbeafe;
     font-size: 2.5rem;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 12px;
     margin-bottom: 2rem;
+    border-left: 4px solid #00c8ff;
     font-weight: 700;
     letter-spacing: 1px;
 }

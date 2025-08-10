@@ -10,10 +10,14 @@
 }
 
 #title_contact {
-    text-align: center;
+    /* text-align: center; */
     color: #ffffff;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 12px;
+    /* padding-bottom: 12px; */
+    border-left: 4px solid #00c8ff;
+
 }
 
 #text_contact {

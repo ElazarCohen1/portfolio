@@ -12,6 +12,8 @@ body {
   flex-direction: column;
   gap: 50px;
   padding: 20px;
+  animation: popUp 1s ease-out forwards;
+
 }
 
 /* ====== ABOUT CARD ====== */
@@ -165,3 +167,6 @@ body {
     text-align: center;
   }
 }
+
+
+
