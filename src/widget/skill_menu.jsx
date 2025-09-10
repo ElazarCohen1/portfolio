@@ -5,6 +5,7 @@ import java_logo from '../assets/langage/java.png'
 import php_logo from '../assets/langage/php.png'
 import c_logo from '../assets/langage/C.png'
 
+import tailwind_logo from '../assets/langage/tailwind.png'
 import html_logo from '../assets/langage/html.png'
 import css_logo from '../assets/langage/css.png'
 import flutter_logo from '../assets/langage/flutter.png'
@@ -12,6 +13,7 @@ import react_logo from'../assets/langage/react.png'
 import git_logo from '../assets/langage/git.png'
 import github_logo from '../assets/langage/github.png'
 import vscode_logo from '../assets/langage/vscode.png'
+import figma_logo from '../assets/langage/figma.png'
 
 
 
@@ -29,12 +31,15 @@ const SkillsMenu = () => {
     { name: 'CSS', imageUrl:  css_logo},
     { name: 'Flutter', imageUrl: flutter_logo },
     { name: 'React', imageUrl: react_logo},
+    { name: 'Tailwind', imageUrl: tailwind_logo},
+
   ];
 
   const skillsUtils = [
     { name: 'Git', imageUrl:  git_logo},
     { name: 'Github', imageUrl:  github_logo},
     { name: 'VsCode', imageUrl: vscode_logo},
+    {name: 'Figma', imageUrl: figma_logo}
   ];
 
   const [selectedSet, setSelectedSet] = useState('set1');
