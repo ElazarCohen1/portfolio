@@ -3,6 +3,7 @@ import Project from '../widget/project'
 import site_covoitureur from '../assets/project/covoitureur_site.jpg'
 import zenlife from '../assets/project/zenLife.png'
 import portfolio from '../assets/project/portfolio.png'
+import darkest_dungeon from '../assets/project/darkest_dungeon.png'
 
 function Portfolio(){
     return (
@@ -32,6 +33,12 @@ function Portfolio(){
                             langages={['html','Css','python3','flask']} 
                             projet="Site_covoitureur" 
                             description=" I have created a site web in school for entrainement at flask and backend with postgres"/>
+                        <Project name="Darkest dungeon"
+                            imageUrl={darkest_dungeon}
+                            langages={['C','Makefile']}
+                            projet="Darkest-dungoen-"
+                            description="This is a project made in C at school. It is a dungeon game where you have to fight monsters and survive as long as possible."
+                        />
                     </div>
             </div>
         </div>
